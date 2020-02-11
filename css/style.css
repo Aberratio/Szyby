@@ -2,6 +2,16 @@ body {
   overflow-x: hidden;
 }
 
+.clean-ul {
+  list-style-type: none;
+}
+
+.clean-link,
+.clean-link.active,
+.clean-link.focus {
+  text-decoration: none;
+}
+
 /* NAVBAR */
 
 .navbar .nav-link {
@@ -41,7 +51,7 @@ body {
 #home-heading {
   position: relative;
   min-height: 200px;
-  background: url();
+  background: url("../img/carousel_1.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
@@ -57,28 +67,11 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* VIDEO PLAY */
-
-#video-play {
-  position: relative;
-  min-height: 200px;
-  background: url();
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 0 -300px;
-  text-align: center;
-  color: #fff;
-}
-
-#video-play a {
-  color: #fff;
-}
-
 /* ABOUT SECTION */
 
 #page-header {
-  height: 200px;
-  background: ;
+  height: 250px;
+  background: url("../img/background.jpg");
   background-position: 0 -360px;
   background-attachment: fixed;
   color: #fff;
@@ -90,27 +83,16 @@ body {
   margin-top: -50px;
 }
 
-/* FAQ */
-
-#faq .card {
-  border: #444;
-}
-
-#faq a {
-  color: #fff;
-  text-decoration: none;
-}
-
-#faq .card-body,
-#faq .card-header {
-  background: #333;
-}
-
 /* FOOTER */
 
 #main-footer {
   background: #000;
   color: #fff;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: rgb(124, 47, 98);
 }
 
 /* MAP */
@@ -120,5 +102,5 @@ body {
 }
 
 .map-container {
-  height: 23rem;
+  height: 35rem;
 }
