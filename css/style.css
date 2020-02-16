@@ -7,9 +7,15 @@ body {
 }
 
 .clean-link,
-.clean-link.active,
-.clean-link.focus {
-  text-decoration: none;
+.clean-link:active,
+.clean-link:hover,
+.clean-link:visited,
+.clean-link:focus {
+  text-decoration: none !important;
+}
+
+.hr-light {
+  border: #fff 0.5px solid !important;
 }
 
 /* NAVBAR */
@@ -58,6 +64,20 @@ body {
   color: #fff;
 }
 
+#home-heading ul {
+  padding-inline-start: 0 !important;
+}
+
+@media (max-height: 650px) {
+  #home-heading {
+    min-height: 400px;
+  }
+
+  #home-heading h1 {
+    margin-bottom: 20px;
+  }
+}
+
 .dark-overlay {
   position: absolute;
   top: 0;
@@ -76,7 +96,18 @@ body {
   background-attachment: fixed;
   color: #fff;
   border-bottom: 1px #eee solid;
-  padding-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (max-height: 650px) {
+  #info {
+    visibility: hidden;
+  }
+
+  #page-header {
+    height: 150px;
+  }
 }
 
 .about-img {
